@@ -1,2 +1,2 @@
 # TradingProjectAssessment
-Repository for assessment containing trading project
+This is a repository for assessment containing trading project
