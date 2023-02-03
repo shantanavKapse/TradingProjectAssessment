@@ -1,0 +1,83 @@
+body{
+    background-color: #121212;
+    color: white;
+}
+
+.box-div{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: fit-content;
+    width: fit-content;
+    padding: 100px;
+    margin: 8% auto;
+    border-radius: 10px;
+}
+
+.main_cont{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 10%;
+}
+
+#csv_file{
+    display: None;
+}
+
+.label_csv_file{
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.file_input{
+    height: fit-content;
+    transition: transform 0.5s;
+    margin: 0;
+}
+.file_input:hover{
+    transform: scale(1.05);
+}
+
+.submit-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    transition: transform 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-btn:hover{
+    transform: scale(1.05);
+}
+
+.timeframe_input{
+    margin: 20% 0;
+}
+
+
+#timeframe{
+    border-radius: 20px;
+    padding: 5px;
+    border: none;
+    width: 150px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#filename{
+    display: block;
+    margin-top: 10px;
+}

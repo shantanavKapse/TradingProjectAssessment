@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'css/index.css' %}>
+    <title>Trading Project</title>
+</head>
+<body>
+    <div class="box-div">
+        <div class="heading">
+            <h1>Trading Project</h1>
+        </div>
+        <div class="main_cont">
+            <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="file_input">
+                    <label for="csv_file" class="label_csv_file">Upload CSV File</label>
+                    <br>
+                    <input type="file" name="csv_file" id="csv_file" accept=".csv, .xlsx" required>
+                </div>
+                <span id="filename"></span>
+                <div class="timeframe_input">
+                    <!-- <label for="timeframe" class="timeframe_label">Enter the timeframe:</label>
+                    <br> -->
+                    <input type="number" name="timeframe" id="timeframe" placeholder="Enter Timeframe" required>
+                </div>
+                <div class="submit_div">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src={% static 'js/index.js' %}></script>
+</body>
+</html>
