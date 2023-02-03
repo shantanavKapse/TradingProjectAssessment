@@ -5,7 +5,7 @@ import pandas as pd
 import math
 import json
 
-# Create your views here.
+
 def index(request):
     if request.method == 'POST':
         candles = []
